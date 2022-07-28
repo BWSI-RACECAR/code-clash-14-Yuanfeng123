@@ -31,7 +31,7 @@ class Solution:
         
         # TODO: Write code below to return a nested list with the solution to the prompt
         N = len(matrix[0])
-        for i in range(N/2):
+        for i in range(round(N/2)):
             for j in range(i, N-1-i):
                 temp = matrix[i][j]
                 matrix[i][j] = matrix[N-1-j][i]
